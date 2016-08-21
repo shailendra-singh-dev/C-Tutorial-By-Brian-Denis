@@ -1,0 +1,89 @@
+#include "stdio.h"
+void basicusage();
+int addition(int n, int m);
+int subtraction(int n, int m);
+void process();
+int result_int;
+double result_double;
+void* add_int(void* x, void* y);
+void* add_double(void* x, void* y);
+void* processing(void* n, void* m, void* (*operation)(void*, void*));
+
+int addition(int n, int m) {
+	return n + m;
+}
+
+int subtraction(int n, int m) {
+	return n - m;
+}
+
+void myfunc(int n) {
+	printf("%d\n", n);
+}
+
+int main() {
+	int n = 10;
+	int m = 20;
+	void* (*operation)(void*, void*);
+	operation = &add_int;
+	int *result_int = (int*) processing(&n, &m, operation);
+	printf("add_int:%d\n", *result_int);
+
+	double n1 = 10;
+	double m1 = 20;
+	operation = &add_double;
+	double *result_double = (double*) processing(&n1, &m1, operation);
+	printf("add_double:%f\n", *result_double);
+
+	return 0;
+}
+
+//void* add_int(void *x, void *y) {
+void* add_int(void* x, void* y) {
+	int *m1 = (int*) x;
+	int *m2 = (int*) y;
+	result_int = *m1 + *m2;
+	return &result_int;
+}
+
+//void* add_double(void* x, void* y) {
+void* add_double(void* x, void *y) {
+	double *m1 = (double*) x;
+	double *m2 = (double*) y;
+	result_double = *m1 + *m2;
+	return &result_double;
+}
+
+void* processing(void *n, void *m, void* (*operation)(void*, void*)) {
+	void* result = operation(n, m);
+	return result;
+}
+
+void process() {
+	int (*operation)(int, int);
+	int n;
+	printf("Enter 0 for addition OR 1 for subtraction");
+	scanf("%d", &n);
+	switch (n) {
+	case 0:
+		operation = &addition;
+		break;
+	case 1:
+		operation = &subtraction;
+		break;
+	}
+	int result = (*operation)(10, 20);
+	printf("Result:%d", result);
+}
+
+void basicusage() {
+	void (*func)(int);
+	//One way of declaration
+	func = &myfunc;
+	func(10);
+	//Second way of declaration,
+	func = myfunc;
+	(*func)(10);
+	func(10);
+}
+

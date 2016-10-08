@@ -3,7 +3,8 @@ void read_structure_from_file();
 void write_structure_to_file();
 
 struct student {
-	char *name;
+	//	char *name;
+	char name[20];
 	int roll_number;
 	double marks;
 };
@@ -14,14 +15,14 @@ void main() {
 }
 
 void write_structure_to_file() {
-	FILE *file = fopen("/home/shail/temp.dat", "w+b");
+	FILE *file = fopen("/home/shail/temp2.dat", "w+b");
 	if (NULL == file) {
 		printf("File can't be open to write");
 		return;
 	}
 
 	struct student s;
-	s.name = malloc(100 * sizeof(char));
+	//	s.name = malloc(100 * sizeof(char));
 
 	while (1) {
 
@@ -48,28 +49,26 @@ void write_structure_to_file() {
 	}
 
 	fclose(file);
-	free(s.name);
 	free(file);
 }
 
 void read_structure_from_file() {
-	FILE *file = fopen("/home/shail/temp.dat", "r+b");
+	FILE *file = fopen("/home/shail/temp2.dat", "r+b");
 	if (NULL == file) {
 		printf("File can't be open to read");
 		return;
 	}
 	struct student s;
-	s.name = malloc(100 * sizeof(char));
+	//	s.name = malloc(100 * sizeof(char));
 	while (1) {
-		int cnt = fread(&s,sizeof(s),1,file);
-		if(0 == cnt){
-			printf("End to file is reached..");
+		int cnt = fread(&s, sizeof(s), 1, file);
+		if (0 == cnt) {
+			printf("End of file is reached..");
 			break;
 		}
 		printf("%s %d %lf \n", s.name, s.roll_number, s.marks);
 		continue;
 	}
 	fclose(file);
-	free(s.name);
 	free(file);
 }

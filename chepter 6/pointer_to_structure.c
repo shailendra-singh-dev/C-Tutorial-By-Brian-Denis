@@ -54,7 +54,7 @@ void print_student_details(STUDENT student) {
 
 void change_marks(STUDENT *student) {
 	printf("Enter new marks:");
-//	scanf("%lf", &(student->marks));
-	scanf("%lf", &(*student).marks);
+	scanf("%lf", &(student->marks));
+//	scanf("%lf", &(*student).marks);
 }
 

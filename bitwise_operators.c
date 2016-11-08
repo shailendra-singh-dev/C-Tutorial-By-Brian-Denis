@@ -4,7 +4,7 @@
 int bitwise_and() {
 	int n1 = 10; // 1010
 	int n2 = 15;//  1111
-	//If both are same 1 else 0
+	//If both are 1 ,result is 1 else 0
 	int n3 = n1 & n2;//    1010
 	printf("bitwise_and():%d", n3);
 	return n3;
@@ -13,7 +13,7 @@ int bitwise_and() {
 int bitwise_or() {
 	int n1 = 10; // 1010
 	int n2 = 15; // 1111
-	//If one of them is 1 result is 1 else 0
+	//If one of them is 1 ,result is 1 else 0
 	int n3 = n1 | n2; //1111
 	printf("bitwise_or():%d", n3);
 	return n3;
@@ -22,7 +22,7 @@ int bitwise_or() {
 int bitwise_xor() {
 	int n1 = 10; // 1010
 	int n2 = 15; // 1111
-	//If both are different result is 1  else 0
+	//If both are different ,result is 1  else 0
 	int n3 = n1 ^ n2; // 0101
 	printf("bitwise_xor():%d", n3);
 	return n3;

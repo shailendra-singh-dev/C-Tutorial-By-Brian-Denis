@@ -2,7 +2,7 @@
 #include <math.h>
 #include <stdlib.h>
 
-int main() {
+int pointers_arrays_main() {
 	//	int ar[5] = { 11, 12, 13, 14, 15 };
 	//	//	printf("Address of first element OR value of pointer:=%d\n", ar);
 	//	//	printf("Address of first element OR value of pointer:=%d\n", &ar[0]);

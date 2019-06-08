@@ -3,16 +3,16 @@
 #define ROWS 2
 #define COLS 5
 void set_value(int array[][5],int value);
-void print_array(int array[][5]);
+void array_of_pointers_print_array(int array[][5]);
 
-void main() {
+void array_of_pointers_main() {
 	int array[ROWS][COLS] =
 			{ { 10, 30, 20, 292, 22 },
 			  { 10, 30, 20, 292, 22 }
 			};
 	int value = 100;
 	set_value(array,value);
-	print_array(array);
+	array_of_pointers_print_array(array);
 
 }
 
@@ -26,7 +26,7 @@ void set_value(int array[][5],int value) {
 	}
 }
 
-void print_array(int array[][5]) {
+void array_of_pointers_print_array(int array[][5]) {
 	int row = 0;
 	int col = 0;
 	for (row = 0; row < ROWS; row++) {

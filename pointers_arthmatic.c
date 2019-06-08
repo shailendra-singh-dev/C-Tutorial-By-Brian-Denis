@@ -2,7 +2,7 @@
 
 void arthmatic();
 
-int main() {
+int pointers_arthmatic_main() {
 	arthmatic();
 	return 0;
 }

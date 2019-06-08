@@ -7,7 +7,7 @@ int* get_pointer_address() {
 	return pn;
 }
 
-void main() {
+void dynamic_memory_main() {
 	int* pn = get_pointer_address();
 	free(pn);
 }

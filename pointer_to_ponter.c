@@ -9,7 +9,7 @@ void method_2();
 void method_3();
 void method_4();
 
-void main() {
+void pointer_to_ponter_main() {
 	printf("Enter number of Rows");
 	scanf("%d", &ROWS);
 	printf("Enter number of Columns");

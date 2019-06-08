@@ -29,8 +29,9 @@ void copyString();
 char longestLine[MAX_LENGTH];
 char line[MAX_LENGTH];
 
-main() {
+int chepter_1_main() {
 	printLargestLineLength();
+	return 0;
 }
 
 void countlines() {

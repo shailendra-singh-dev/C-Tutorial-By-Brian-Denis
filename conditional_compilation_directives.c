@@ -7,7 +7,7 @@
 #define MIN -1
 #endif
 
-int main(int argc, char *argv[]) {
+int conditional_compilation_directives_main(int argc, char *argv[]) {
 	printf("MIN:%d\n", MIN);
 
 #ifndef TYPE

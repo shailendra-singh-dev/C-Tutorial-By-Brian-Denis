@@ -3,7 +3,7 @@ void printarray(int arr[], int size);
 void incrementelements(int arr[], int size);
 void buildarray(int arr[], int size);
 
-int main() {
+int arrays_main() {
 	int arr[] = { 10, 20, 30, 40, 50 };
 //	printarray(arr, 5);
 //	incrementelements(arr, 5);

@@ -2,7 +2,7 @@
 
 void initialization();
 
-int main() {
+int pointers_intro_main() {
 	initialization();
 	return 0;
 }

@@ -1,6 +1,6 @@
 #include "stdio.h"
 
-int main() {
+int constants_main() {
 
 	const int octalconstant = 071;
 	const hexadecimalconstant =0x3F;

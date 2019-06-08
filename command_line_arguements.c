@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <stdarg.h>
 
-int main(int argc, char *argv[]) {
+int command_line_arguements_main(int argc, char *argv[]) {
 	printf("main() called with %d arguments..",argc);
 	if (1 == argc) {
 		printf("Enter at least one argument.");

@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-void main() {
+void string_array_main() {
 	char *messages[10];
 	char *allstring;
 	int i = 0;

@@ -3,7 +3,7 @@
 int even_odd();
 int even_odd_v1();
 
-int main() {
+int goto_main() {
 	return even_odd_v1();
 }
 

@@ -1,4 +1,4 @@
-void main() {
+void strings_intro_main() {
 	//Static initialization..
 	char string[] = { 'A', 'l', 'l', 'a', 'h', 'a', 'b', 'a', 'd', '\0' };
 	printf("%s\n", string);

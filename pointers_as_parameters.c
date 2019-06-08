@@ -2,7 +2,7 @@
 
 void arthmatic();
 
-int main() {
+int pointers_as_parameters_main() {
 
 	int n = 10;
 	int m = 20;

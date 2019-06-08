@@ -2,7 +2,7 @@
 #include <stdarg.h>
 double average_double(int num, ...);
 
-void main() {
+void var_args_main() {
 		printf("Average of 2, 3, 4, 5 = %f\n", average_double(4, 2, 3, 4, 5));
 		printf("Average of 5, 10, 15 = %f\n", average_double(3, 5, 10, 15));
 }

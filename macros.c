@@ -10,7 +10,7 @@
 						i++;\
 					   }
 
-int main() {
+int macros_main() {
 	printf("%d\n", MULTIPLY(10,10));
 	int x = 100;
 	char *str = "abc";

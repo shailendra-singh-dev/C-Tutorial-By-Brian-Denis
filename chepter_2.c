@@ -3,8 +3,9 @@
 
 void printRanges();
 
-main() {
+int chepter_2_main() {
 	printRanges();
+	return 0;
 }
 
 void printRanges() {

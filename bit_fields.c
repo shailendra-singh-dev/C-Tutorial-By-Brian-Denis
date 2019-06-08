@@ -9,7 +9,7 @@ struct Employee2 {
 
 } emp2;
 
-void main() {
+void bit_fields_main() {
 	printf("size of emp1.roll_number:%d\n", sizeof(emp1));
 	printf("size of emp2.roll_number:%d", sizeof(emp2));
 }

@@ -24,7 +24,7 @@ void reverse(char s[]);
 void gotofunction();
 int trim(char s[]);
 
-int main() {
+int chepter_3_main() {
 	//binarysearch
 	//	int element = 10;
 	//	int array[] = { 0, 90, 10, 33, 344, 90 };

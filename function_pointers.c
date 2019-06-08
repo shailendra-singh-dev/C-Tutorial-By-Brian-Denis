@@ -24,7 +24,7 @@ void myfunc(int n) {
 	printf("%d\n", n);
 }
 
-int main() {
+int function_pointers_main() {
 	process();
 	return 0;
 }

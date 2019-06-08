@@ -1,7 +1,7 @@
 #include "stdio.h"
 #include "string.h"
 
-void main() {
+void string_functions_main() {
 	char s1[50];
 	char s2[50];
 	printf("Enter first string");

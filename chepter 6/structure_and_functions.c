@@ -27,7 +27,7 @@ int is_point_inside_rect(struct point p, struct rect r) {
 	return (p.x > r.pt1.x && p.x < r.pt1.x) && (p.y > r.pt1.y && p.y < r.pt2.y);
 }
 
-int main() {
+int structure_and_function_main() {
 	screen.pt1 = make_point(0, 0);
 	screen.pt2 = make_point(XMAX, YMAX);
 	int x = (screen.pt1.x + screen.pt2.x) / 2;

@@ -16,7 +16,7 @@ int get_line_length(char line[], int lineMaxLength) {
 	return i;
 }
 
-int main(int argc, char *argv[]) {
+int grep_main(int argc, char *argv[]) {
 	char *line = "shailendra";
 	int length = get_line_length(line, 100);
 	printf("\n length=%d", length);

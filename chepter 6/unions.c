@@ -19,7 +19,7 @@ typedef struct {
 	DATA data;
 } VARIENT;
 
-int main() {
+int unions_main() {
 	VARIENT varient;
 	//Reading int any time..
 	printf("Enter any data ");

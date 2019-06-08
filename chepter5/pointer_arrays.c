@@ -3,7 +3,7 @@ void writelines(char *array[], int nlines);
 
 #define STRING_CONST "i am here"
 
-int main() {
+int pointer_arrays_main() {
 	writelines_test();
 	return 0;
 }

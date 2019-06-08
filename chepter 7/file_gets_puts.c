@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <stdarg.h>
 
-int main(int argc, char *argv[]) {
+int file_gets_puts_main(int argc, char *argv[]) {
 	char *line;
 	line = malloc(100 * sizeof(char));
 	char *file_to_read = argv[1];

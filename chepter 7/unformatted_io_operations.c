@@ -1,6 +1,6 @@
 #include "stdio.h"
 
-int main() {
+int unformatted_io_operations_main() {
 	get_char();
 	return 0;
 }

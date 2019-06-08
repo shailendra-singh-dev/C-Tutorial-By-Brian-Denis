@@ -8,7 +8,7 @@ struct book {
 
 } books[TOTAL_BOOKS];
 
-int main() {
+int array_of_structures_main() {
 	int i = 0;
 	for (i = 0; i < TOTAL_BOOKS; i++) {
 		printf("Enter book name");

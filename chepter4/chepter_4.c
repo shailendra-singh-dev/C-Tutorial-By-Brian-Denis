@@ -10,7 +10,7 @@ int staticvariable;
 
 #define MAXSIZE 100
 
-int main() {
+int chepter_4_main() {
 	preprocessor();
 	return 0;
 }

@@ -18,7 +18,7 @@ typedef struct Student {
 STUDENT read_student_details();
 void print_student_details(STUDENT student);
 
-int main() {
+int pointer_to_structure_main() {
 	STUDENT student;
 	student = read_student_details();
 	print_student_details(student);

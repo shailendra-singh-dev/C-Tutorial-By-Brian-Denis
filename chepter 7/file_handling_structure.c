@@ -7,7 +7,7 @@ struct student {
 	double marks;
 };
 
-void main() {
+void file_handling_structure_main() {
 //		write_structure_to_file();
 //	read_structure_from_file_v1();
 	read_structure_from_file_v2();

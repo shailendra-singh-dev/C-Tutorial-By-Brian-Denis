@@ -3,7 +3,7 @@
 #include <stdarg.h>
 void filecopy(FILE *fpin, FILE *fpout);
 
-int main(int argc, char *argv[]) {
+int stderr_test_main(int argc, char *argv[]) {
 	FILE *fp;
 	char *prog = argv[0];
 	if (argc == 1) {

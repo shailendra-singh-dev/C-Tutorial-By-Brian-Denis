@@ -13,7 +13,7 @@ struct Person {
 	struct Date dob;
 };
 
-int main() {
+int structure_intro_main() {
 	struct Person person;
 	person.name = malloc(1000 * sizeof(char));
 	person.address = malloc(1000 * sizeof(char));

@@ -2,7 +2,7 @@
 void write_file(char* file_path);
 
 
-int main() {
+int file_handling_characters_main() {
 	write_file("/home/shail/temp1.txt");
 	return 0;
 }

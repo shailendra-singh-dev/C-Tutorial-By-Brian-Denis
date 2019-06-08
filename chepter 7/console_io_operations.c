@@ -1,6 +1,6 @@
 #include "stdio.h"
 
-int main() {
+int console_io_operation_main() {
 	read_chars_2();
 	return 0;
 

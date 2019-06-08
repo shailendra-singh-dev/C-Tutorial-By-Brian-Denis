@@ -3,7 +3,7 @@
 #include <stdarg.h>
 void filecopy(FILE *fpin, FILE *fpout);
 
-int main(int argc, char *argv[]) {
+int file_copy_main(int argc, char *argv[]) {
 	FILE *fp;
 	if (argc == 1) {
 		filecopy(stdin, stdout);
@@ -22,7 +22,7 @@ int main(int argc, char *argv[]) {
 	return 0;
 }
 
-void filecopy(FILE *fpin, FILE *fpout) {
+void file_copy_filecopy(FILE *fpin, FILE *fpout) {
 	int ch;
 	while ((ch = getc(fpin)) != EOF) {
 		putc(ch,fpout);

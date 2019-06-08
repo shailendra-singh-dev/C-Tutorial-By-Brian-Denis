@@ -9,12 +9,12 @@ struct student {
 	double marks;
 };
 
-void main() {
+void file_handling_methods_main() {
 //	write_structure_to_file();
 	read_structure_from_file();
 }
 
-void write_structure_to_file() {
+void file_handling_methods_write_structure_to_file() {
 	FILE *file = fopen("/home/shail/temp2.dat", "w+b");
 	if (NULL == file) {
 		printf("File can't be open to write");

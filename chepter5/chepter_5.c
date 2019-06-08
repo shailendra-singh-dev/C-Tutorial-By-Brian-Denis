@@ -13,7 +13,7 @@ char *month_name(int n);
 //	return 0;
 //}
 
-int main(int argc, int *argv) {
+int chepter_5_main(int argc, int *argv) {
 	return main_v1(argc, argv);
 }
 
@@ -25,12 +25,12 @@ int main_v1(int argc, int *argv) {
 	return 0;
 }
 
-void writelines_test() {
+void chepter_5_writelines_test() {
 	char *array[] = { "hi", "this is me", "shailendra" };
 	writelines(array, 3);
 }
 
-void strcmp_test() {
+void chepter_5_strcmp_test() {
 	char *s = "a";
 	char *t = "d";
 
@@ -38,7 +38,7 @@ void strcmp_test() {
 	printf("%d", result);
 }
 
-void strcpy_test() {
+void chepter_5_strcpy_test() {
 	char *str1 = "abc";
 	char *str2 = "def";
 
@@ -47,7 +47,7 @@ void strcpy_test() {
 	printf("%s", *str2);
 }
 
-void strlen_test() {
+void chepter_5_strlen_test() {
 	char *str = "Hi how are you ?";
 	char char_array[] = { 'h', 'o', 'w', 'a', 'r', 'e', 'y', 'o', 'u' };
 
@@ -55,7 +55,7 @@ void strlen_test() {
 	printf("strlen:%d", len);
 }
 
-int strlen_function(char *c) {
+int chepter_5_strlen_function(char *c) {
 	int len;
 	for (len = 0; *c != '\0'; c++) {
 		len++;
@@ -63,7 +63,7 @@ int strlen_function(char *c) {
 	return len;
 }
 
-int strlen_function_(char *c) {
+int chepter_5_strlen_function_(char *c) {
 	char *p = c;
 	while (*p != '\0') {
 		p++;
@@ -71,30 +71,30 @@ int strlen_function_(char *c) {
 	return p - c;
 }
 
-void strcpy_function(char *s, char *t) {
+void chepter_5_strcpy_function(char *s, char *t) {
 	int i;
 	while ((s[i] = t[i]) != '\0')
 		i++;
 }
 
-void strcpy_function_v1(char *s, char *t) {
+void chepter_5_strcpy_function_v1(char *s, char *t) {
 	while ((*s = *t) != '\0') {
 		s++;
 		t++;
 	}
 }
 
-void strcpy_function_v2(char *s, char *t) {
+void chepter_5_strcpy_function_v2(char *s, char *t) {
 	while ((*s++ = *t++) != '\0')
 		;
 }
 
-void strcpy_function_v3(char *s, char *t) {
+void chepter_5_strcpy_function_v3(char *s, char *t) {
 	while ((*s++ = *t++))
 		;
 }
 
-int strcmp_function(char *s, char *t) {
+int chepter_5_strcmp_function(char *s, char *t) {
 	int i;
 	for (i = 0; s[i] == t[i]; i++) {
 		if (s[i] == '\0') {
@@ -104,7 +104,7 @@ int strcmp_function(char *s, char *t) {
 	return *s - *t;
 }
 
-int strcmp_function_v1(char *s, char *t) {
+int chepter_5_strcmp_function_v1(char *s, char *t) {
 	for (; *s == *t; s++, t++) {
 		if (*s == '\0') {
 			return 0;
@@ -113,7 +113,7 @@ int strcmp_function_v1(char *s, char *t) {
 	return *s - *t;
 }
 
-void writelines(char *array[], int nlines) {
+void chepter_5_writelines(char *array[], int nlines) {
 	int i;
 
 	for (i = 0; i < nlines; i++) {
@@ -137,7 +137,7 @@ void quick_sort(char *v[], int left, int right) {
 
 }
 
-void swap(char *v[], int i, int j) {
+void chepter_5_swap(char *v[], int i, int j) {
 	char *temp;
 	temp = v[i];
 	v[j] = temp;

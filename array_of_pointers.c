@@ -13,7 +13,6 @@ void array_of_pointers_main() {
 	int value = 100;
 	set_value(array,value);
 	array_of_pointers_print_array(array);
-
 }
 
 void set_value(int array[][5],int value) {

@@ -20,8 +20,9 @@ int sum(int num1, int num2) {
 	return printf("%*c%*c", num1, ' ', num2, ' ');
 }
 
-int main(int argc, char *args[]) {
+int addition_main(int argc, char *args[]) {
 	printf("boolean:%d", !10);
+	return 0;
 }
 
 //Addition using recursion

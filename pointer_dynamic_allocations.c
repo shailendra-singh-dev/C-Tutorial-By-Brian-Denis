@@ -6,8 +6,8 @@ void pointer_dynamic_allocations_main() {
 	int *array;
 	array = malloc(SIZE * sizeof(int));
 	int value = 8888;
-	set_array(array, value);
-	print_array(array);
+	pointer_dynamic_allocations_set_array(array, value);
+	pointer_dynamic_allocations_print_array(array);
 }
 
 void pointer_dynamic_allocations_set_array(int array[], int value) {
